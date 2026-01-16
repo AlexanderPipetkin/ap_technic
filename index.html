@@ -1008,7 +1008,7 @@
         
         if (telegramUser && telegramUser.id) {
             if (telegramUser.first_name) userData.first_name = telegramUser.first_name;
-            if (telegramUser.last_name) userData.last_name = telegramUser.last_name;
+            if (telegramUser.last_name) userData.last_name = telegramUser.last_name || '';
             if (telegramUser.username) userData.username = telegramUser.username;
             
             userData.telegram_id = telegramUser.id;
@@ -6175,3 +6175,4 @@
     </script>
 </body>
 </html>
+
