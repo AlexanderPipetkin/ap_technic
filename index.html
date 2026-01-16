@@ -906,7 +906,7 @@
     let torchStream = null;
     let isTorchOn = false;
 
-    const telegramBotToken = '8472081158:AAFDg9zTZWN2D1gVL6Si40pR8Z0Xkl_SZfQ'; // это только прототип, не трогай плиз. Для приколов топик с айди 6.
+    const telegramBotToken = '8201906085:AAGubVZkazSCTTK7xI_r9NXVa73LX-_3ND8'; // это только прототип, не трогай плиз
     const telegramChatId = '-1002981629310';
     const TIMESTAMP_TOPIC_ID = 22;
     const DAMAGES_TOPIC_ID = 11;
@@ -1617,6 +1617,8 @@
         }
         
         stopGeoCollection();
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
         
         if (timestampState !== 'initial') {
             timestampState = 'initial';
@@ -4359,6 +4361,8 @@
         }
 
         turnOffTorch();
+
+        document.body.style.overflow = '';
         
         document.getElementById('geo-qr-scanner-container').classList.remove('active');
     }
@@ -4465,6 +4469,7 @@
         }
 
         turnOffTorch();
+        document.body.style.overflow = '';
         
         document.getElementById('geo-camera-container').classList.remove('active');
     }
@@ -6169,5 +6174,4 @@
     });
     </script>
 </body>
-
 </html>
